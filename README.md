@@ -6,10 +6,10 @@ It’s a 2-player game, similar to tic-tac-toe. It has 7 vertical columns and 6 
 similar to tic-tac-toe the code started in html but instead of 9 squares we will put 42 squares.
 
 ------------------------------------
- [ <body>
-    <section class="board">
-      <div class="sqr" id="0"></div>
-      <div class="sqr" id="1"></div>
+         <body>
+            <section class="board">
+               <div class="sqr" id="0"></div>
+                <div class="sqr" id="1"></div>
       <div class="sqr" id="2"></div>
       <div class="sqr" id="3"></div>
       <div class="sqr" id="4"></div>
@@ -20,7 +20,7 @@ similar to tic-tac-toe the code started in html but instead of 9 squares we will
       ........................
       <div class="sqr" id="42"></div>
     </section>
-    </body>]
+    </body>
     ------------------------------------
 
     
