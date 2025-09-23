@@ -31,7 +31,7 @@ Create a function to switch turns.
 Add event listeners for clicking the squares on the board and for the Reset button.
 
 ## Game wireframe:
-![Image](https://imgur.com/erYxeUi)
+[Imgur](https://imgur.com/erYxeUi)
 
 ## Game Pseudocode:
 
