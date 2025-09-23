@@ -31,6 +31,17 @@ Create a function to switch turns.
 Add event listeners for clicking the squares on the board and for the Reset button.
 
 ## Game wireframe:
+------------------------------------
+|        Connect Four Game         |
+------------------------------------
+|   [ Message: "Player 1's Turn"]  |
+------------------------------------
+|   [ Board with 42 squares ]      |
+|   [ arranged 7 columns × 6 rows ]|
+------------------------------------
+|   [ Reset Button ]               |
+------------------------------------
+#### GAME VISUAL PLAN
 ![GAME SAMPLE](https://i.imgur.com/erYxeUi.png)
 
 ## Game Pseudocode:
