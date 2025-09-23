@@ -58,15 +58,15 @@ if the winner is false and the board is not full:
     Display message: currentPlayer's turn
     Wait for player to click a square
     
-    if square is empty:
+if square is empty:
         fill square with currentPlayer's color
-         then, Check for winner
+        then, Check for winner
          
-       if there is a winner:
-            Display message: currentPlayer wins
-            End game
-         else:
-            Switch currentPlayer from red to yellow with if statement.
+if there is a winner:
+     Display message: currentPlayer wins
+     End game
+else:
+    Switch currentPlayer from red to yellow with if statement.
    
 
 
