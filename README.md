@@ -21,7 +21,7 @@ similar to tic-tac-toe the code started in html but instead of 9 squares we will
            <div class="sqr" id="42"></div>
          </section>
        </body>
-    ------------------------------------
+------------------------------------
 
     
 ## Game outline: 
