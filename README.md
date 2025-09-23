@@ -17,7 +17,7 @@ similar to tic-tac-toe the code started in html but instead of 9 squares we will
            <div class="sqr" id="6"></div>
            <div class="sqr" id="7"></div>
            <div class="sqr" id="8"></div>
-            ........................
+           <div class="sqr".......</div>
            <div class="sqr" id="42"></div>
          </section>
        </body>
