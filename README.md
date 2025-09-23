@@ -7,20 +7,20 @@ similar to tic-tac-toe the code started in html but instead of 9 squares we will
 
 ------------------------------------
          <body>
-            <section class="board">
-               <div class="sqr" id="0"></div>
-                <div class="sqr" id="1"></div>
-      <div class="sqr" id="2"></div>
-      <div class="sqr" id="3"></div>
-      <div class="sqr" id="4"></div>
-      <div class="sqr" id="5"></div>
-      <div class="sqr" id="6"></div>
-      <div class="sqr" id="7"></div>
-      <div class="sqr" id="8"></div>
-      ........................
-      <div class="sqr" id="42"></div>
-    </section>
-    </body>
+          <section class="board">
+           <div class="sqr" id="0"></div>
+           <div class="sqr" id="1"></div>
+           <div class="sqr" id="2"></div>
+           <div class="sqr" id="3"></div>
+           <div class="sqr" id="4"></div>
+           <div class="sqr" id="5"></div>
+           <div class="sqr" id="6"></div>
+           <div class="sqr" id="7"></div>
+           <div class="sqr" id="8"></div>
+            ........................
+           <div class="sqr" id="42"></div>
+         </section>
+       </body>
     ------------------------------------
 
     
