@@ -243,6 +243,9 @@ const checkForWinner = () => {
 //////////////////////////////////
 
 // Event Listeners Here
-
+squares.forEach((square) => {
+square.addEventListener("click", (event) => handleClick(event))
+})
+resetBtn.addEventListener("click", init)
 
 ////////////////////////////////
