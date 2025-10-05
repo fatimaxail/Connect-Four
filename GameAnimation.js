@@ -103,6 +103,50 @@ const init = () => {
 ]
   turn = "red"
   winner = false
+  render()
+}
+
+const handleClick = (event) => {
+  console.log("clicked")
+  const sqIdx = event.target.id
+  const square = board[sqIdx] !== ""
+  if (square || winner) {
+    return
+  }
+}
+
+const render = () => {
+  console.log("called")
+  updateMessage ()
+  updateBoard ()
+}
+
+const updateBoard = () => {
+  board.forEach((cell, idx) => {
+    if (cell === "red"){
+      squares[idx].style.backgroundColor = "red"
+    } else if (cell === "yellow"){
+      squares[idx].style.backgroundColor = "yellow"
+    } else {
+      squares[idx].style.backgroundColor = "#004aad"
+    }
+  })
+}
+
+const updateMessage = () => {
+  if (!winner) {
+    if (turn === "red") {
+      message.textContent = "It's red player turn"
+    } else {
+      message.textContent = "It's yellow player turn"
+    }
+  } else {
+    if (turn === "red") {
+      message.textContent = "red player wins"
+    } else {
+      message.textContent = "yellow player wins"
+    }
+  }
 }
 
 
