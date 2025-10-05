@@ -86,10 +86,24 @@ let winner = false
 ////////////////////////////////
 
 //  Cached Element References
-
+const squares = document.querySelectorAll(".sqr")
+const message = document.querySelector("#Message")
+const resetBtn = document.querySelector("#Reset")
 ////////////////////////////////
 
 // Functions For Game Logic Here
+const init = () => {
+  board = [
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", ""
+]
+  turn = "red"
+  winner = false
+}
 
 
 
