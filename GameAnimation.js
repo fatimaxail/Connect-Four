@@ -78,7 +78,6 @@ let board = [
   "", "", "", "", "", "", "",
   "", "", "", "", "", "", "",
   "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
   "", "", "", "", "", "", ""
 ]
 let turn = "red"
@@ -105,10 +104,26 @@ const init = () => {
   winner = false
   render()
 }
-
+const switchTurns = () => {
+  if (winner === true){
+    return
+  }
+  if (turn === "red") {
+    turn === "yellow"
+  } else {
+    turn === "red"
+  }
+}
 const handleClick = (event) => {
   console.log("clicked")
   const sqIdx = event.target.id
+  if (turn === "red") {
+    squares[sqIdx].style.backgroundColor = "red"
+    } else if (turn === "yellow") {
+    squares[idx].style.backgroundColor = "yellow"
+  } else {
+  squares[idx].style.backgroundColor = "#004aad"
+}
   const square = board[sqIdx] !== ""
   if (square || winner) {
     return
@@ -148,16 +163,7 @@ const updateMessage = () => {
     }
   }
 }
-const switchTurns = () => {
-  if (winner === true){
-    return
-  }
-  if (turn === "red") {
-    turn === "yellow"
-  } else {
-    turn === "red"
-  }
-}
+
 const placePiece = (idx) => {
   board[idx] = turn
 }
