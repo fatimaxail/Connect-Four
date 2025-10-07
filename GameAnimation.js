@@ -103,6 +103,9 @@ const init = () => {
 ]
   turn = "red"
   winner = false
+  squares.forEach(square => {
+    square.style.backgroundColor = "";
+  });
   render()
 }
 
@@ -115,9 +118,11 @@ const handleClick = (event) => {
   if (turn === "red") {
     squares[sqIdx].style.backgroundColor = "red";
     board[sqIdx] = "red";
+      // squares[sqIdx].classList.add ("red-circle")
   } else {
     squares[sqIdx].style.backgroundColor = "yellow";
     board[sqIdx] = "yellow";
+    // squares[sqIdx].classList.add ("yellow-circle")
   };
   checkForWinner();
   switchTurns();
@@ -138,20 +143,21 @@ const switchTurns = () => {
 const render = () => {
   console.log("called")
   updateMessage()
-  updateBoard()
+  // updateBoard()
 }
 
-const updateBoard = () => {
-  board.forEach((cell, idx) => {
-    if (cell === "red"){
-      squares[idx].style.backgroundColor = "red"
-    } else if (cell === "yellow"){
-      squares[idx].style.backgroundColor = "yellow"
-    } else {
-      squares[idx].style.backgroundColor = "#004aad"
-    }
-  })
-}
+// const updateBoard = () => {
+//   board.forEach((cell, idx) => {
+//     if (cell === "red"){
+//       squares[idx].classList.add ("red-circle")
+//     } else if (cell === "yellow"){
+//       squares[idx].classList.add ("yellow-circle")
+//     } else {
+//       squares[idx].classList.remove ("red-circle, yellow-circle")
+//     }
+//   })
+// }
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 
 const updateMessage = () => {
   if (!winner) {
