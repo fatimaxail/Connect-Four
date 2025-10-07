@@ -21,8 +21,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  height: 552px ;
+  height: 600px ;
 }
+
 .sqr {
   width: 12%;
   aspect-ratio: 1/1;
@@ -34,6 +35,7 @@ h2 {
   vertical-align: top;
   background-color: #004aad;
 }
+
 
 button {
   height: 60px;
