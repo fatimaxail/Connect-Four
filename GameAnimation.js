@@ -155,17 +155,9 @@ const updateBoard = () => {
 
 const updateMessage = () => {
   if (!winner) {
-    if (turn === "red") {
-      message.textContent = "It's red player turn"
-    } else {
-      message.textContent = "It's yellow player turn"
-    }
+    message.textContent = `It's ${turn} player turn`;
   } else {
-    if (turn === "red") {
-      message.textContent = "red player wins"
-    } else {
-      message.textContent = "yellow player wins"
-    }
+    message.textContent = `${turn} player wins! 🎊`;
   }
   }
 
