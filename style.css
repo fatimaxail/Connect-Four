@@ -103,3 +103,78 @@ button {
   box-shadow:inset -15px -12px #024cb3;
   position: absolute;
 }
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  p, ol {
+    font-size: 24px;
+  }
+
+  .board {
+    width: 600px;
+    height: 520px;
+    right: 10px;
+  }
+
+  .sqr {
+    font-size: 90px;
+  }
+
+  button {
+    width: 180px;
+    height: 55px;
+    font-size: 30px;
+    margin: 20px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  p, ol {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .board {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    margin: 20px auto;
+    transform: none;
+    right: auto;
+    top: auto;
+  }
+
+  .sqr {
+    width: calc(100% / 7);
+    font-size: 70px;
+  }
+
+  button {
+    width: 160px;
+    height: 50px;
+    font-size: 25px;
+    margin: 15px auto;
+    position: relative;
+    box-shadow: inset -10px -8px #024cb3;
+  }
+
+  #red, #yellow {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+}
