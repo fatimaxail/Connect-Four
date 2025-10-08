@@ -196,7 +196,7 @@ const checkForWinner = () => {
     (board[22] !== "" && board[22] === board[23] && board[22] === board[24] && board[22] === board[25]) ||
     (board[23] !== "" && board[23] === board[24] && board[23] === board[25] && board[23] === board[26]) ||
     (board[24] !== "" && board[24] === board[25] && board[24] === board[26] && board[24] === board[27]) ||
-    (board[28] !== "" && board[28] === board[29] && board[28] === board[30] && board[28] === board[30]) ||
+    (board[28] !== "" && board[28] === board[29] && board[28] === board[30] && board[28] === board[31]) ||
     (board[29] !== "" && board[29] === board[30] && board[29] === board[31] && board[29] === board[32]) ||
     (board[30] !== "" && board[30] === board[31] && board[30] === board[32] && board[30] === board[33]) ||
     (board[31] !== "" && board[31] === board[32] && board[31] === board[33] && board[31] === board[34]) ||
