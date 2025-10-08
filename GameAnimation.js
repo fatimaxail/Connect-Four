@@ -111,17 +111,27 @@ const init = () => {
 
 const handleClick = (event) => {
   console.log("clicked")
-  const sqIdx = event.target.id
-  if (board[sqIdx] !== "" || winner) {
-    return
+  const sqIdx = +event.target.id
+  const column = sqIdx % 7
+  let targetIdx = null;
+    for (let row = 5; row >= 0; row--) {
+      const idx = row * 7 + column;
+    if (board[idx] === "") {
+      targetIdx = idx;
+      break;
+    }
+  }
+    if (targetIdx === null || winner) {
+    return;
   };
+
   if (turn === "red") {
-    squares[sqIdx].style.backgroundColor = "red";
-    board[sqIdx] = "red";
+    squares[targetIdx].style.backgroundColor = "red";
+    board[targetIdx] = "red";
       // squares[sqIdx].classList.add ("red-circle")
   } else {
-    squares[sqIdx].style.backgroundColor = "yellow";
-    board[sqIdx] = "yellow";
+    squares[targetIdx].style.backgroundColor = "yellow";
+    board[targetIdx] = "yellow";
     // squares[sqIdx].classList.add ("yellow-circle")
   };
   checkForWinner();
@@ -167,10 +177,6 @@ const updateMessage = () => {
   }
   }
 
-
-const placePiece = (idx) => {
-  board[idx] = turn
-}
 
 const checkForWinner = () => {
   if (
