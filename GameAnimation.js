@@ -106,6 +106,7 @@ const init = () => {
   squares.forEach(square => {
     square.style.backgroundColor = "";
   });
+  
   render()
 }
 
@@ -128,11 +129,9 @@ const handleClick = (event) => {
   if (turn === "red") {
     squares[targetIdx].style.backgroundColor = "red";
     board[targetIdx] = "red";
-      // squares[sqIdx].classList.add ("red-circle")
   } else {
     squares[targetIdx].style.backgroundColor = "yellow";
     board[targetIdx] = "yellow";
-    // squares[sqIdx].classList.add ("yellow-circle")
   };
   checkForWinner();
   switchTurns();
@@ -151,23 +150,9 @@ const switchTurns = () => {
 }
 
 const render = () => {
-  console.log("called")
   updateMessage()
-  // updateBoard()
 }
 
-// const updateBoard = () => {
-//   board.forEach((cell, idx) => {
-//     if (cell === "red"){
-//       squares[idx].classList.add ("red-circle")
-//     } else if (cell === "yellow"){
-//       squares[idx].classList.add ("yellow-circle")
-//     } else {
-//       squares[idx].classList.remove ("red-circle, yellow-circle")
-//     }
-//   })
-// }
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 
 const updateMessage = () => {
   if (!winner) {
