@@ -69,7 +69,7 @@ else:
     Switch currentPlayer from red to yellow with if statement.
 
 ## Game link:
-   my-connect-4-project.surge.sh
+   [my-connect-4-project.surge.sh](my-connect-4-project.surge.sh)
 
 
 
